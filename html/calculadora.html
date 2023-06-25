@@ -138,30 +138,6 @@
     <div id="voltar">
         <a href="../html/projetos.html"><img src="../img/icons8-seta-longa-à-direita-48.png" alt="voltar" title="Voltar"></a>
     </div>
-    <script>
-        function insert(num){
-            
-           var numero = document.getElementById('resultado').innerHTML;
-           document.getElementById('resultado').innerHTML = numero + num;
-        }
-        function clean(){
-            document.getElementById('resultado').innerHTML = "";
-        }
-        function back(){
-            var resultado = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = resultado.substring(0,resultado.length -1);
-        }
-        function calcular(){
-            var resultado = document.getElementById('resultado').innerHTML;
-            if(resultado)
-            {
-                document.getElementById('resultado').innerHTML = eval(resultado);
-            }
-            else{
-                document.getElementById('resultado').innerHTML = "0";
-            }
-        }
-
-    </script>
+    <script src="../JS/calculadora.js"></script>
 </body>
 </html>
