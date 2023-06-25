@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/projeto.css">
+    <title>Projetos</title>
+</head>
+<body>
+    <div id="container-projetos">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="container-slider">
+            <div class="container-slider">
+                <div id="header-slider">
+                    <h2>Navegue pelos projetos</h2>
+                </div>
+                <div id="bottom-slider">
+                    <button id="prev-bt"><img src="../img/left.png" alt="prev-button" title="Anterior"></button>
+                    <div class="carrossel">
+                        <div class="slider on">
+                            <a href="https://www.google.com.br/" target="_blank"><img src="../img/Captura.png" alt="Em Breve"></a>
+                            <div class="describe">
+                                <h3>Blog de Tecnologia</h3>
+                                <p>Projeto academico desenvolvido em html, css e js</p>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <a href="relogio.html" target="_blank"><img src="../img/Captura2.png" alt="Relógio Digital"></a>
+                            <div class="describe">
+                                <h3>Relógio Digital</h3>
+                                <p>Desenvolvido com html, css e js</p>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <a href="calculadora.html" target="_blank"><img src="../img/Captura3.png" alt="Calculadora"></a>
+                            <div class="describe">
+                                <h3>Calculadora</h3>
+                                <p>Calculadora Simples com html, css e js</p>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <a href="https://www.google.com.br/" target="_blank"><img src="../img/vazio.png" alt="Em Breve"></a>
+                            <div class="describe">
+                                <h3>Teste</h3>
+                                <p>Altos testes envolvidos</p>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <a href="https://www.google.com.br/" target="_blank"><img src="../img/vazio.png" alt="Em Breve"></a>
+                            <div class="describe">
+                                <h3>Teste</h3>
+                                <p>Altos testes envolvidos</p>
+                            </div>
+                        </div>
+                    </div>
+                <button id="next-bt"><img src="../img/right.png" alt="next-button" title="Proximo"></button>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <footer>
+        <div id="creditos">
+            <h4>Créditos e Atribuições</h4>
+            <a href="https://storyset.com/online">Online illustrations - Storyset</a>
+        </div>
+        <div id="contato">
+            <h4>Contato</h4>
+            <p>Email: Motavinicius@outlook.com</p>
+            <p>Redes Sociais: <a href="contato.html">Clique aqui</a></p>
+        </div>
+    </footer>
+    <script>
+  
+const slider = document.querySelectorAll('.slider');
+const btnPrev = document.getElementById('prev-bt');
+const btnNext = document.getElementById('next-bt');
+
+let currentSlide = 0;
+
+function hideSlider(){
+    slider.forEach(item => item.classList.remove('on'))
+}
+
+function showSlider(){
+    slider[currentSlide].classList.add('on')
+}
+function nextSlider(){
+    hideSlider()
+    if(currentSlide == slider.length -1) {
+        currentSlide = 0
+    } else {
+        currentSlide++
+    }
+    showSlider();
+    slider[currentSlide].scrollIntoView({
+    behavior: "smooth",
+    inline: "center"
+  });
+}
+
+function prevSlider() {
+    hideSlider()
+    if(currentSlide == 0) {
+        currentSlide = slider.length - 1   
+    } else {
+        currentSlide--
+    }
+    showSlider();
+    slider[currentSlide].scrollIntoView({
+    behavior: "smooth",
+    inline: "center"
+  });
+}
+
+
+btnNext.addEventListener('click', nextSlider)
+btnPrev.addEventListener('click', prevSlider)
+
+console.log(slider)
+    </script>
+</body>
+</html>

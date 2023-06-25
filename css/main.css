@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../img/blur10.png');
+    background-size: cover;
+}
+
+#container{
+    min-height: 100vh;
+    width: 99vw;
+}
+/*---MENU---*/
+nav#menu{
+    height: 6vh;
+    width: 99vw;
+    text-align: center;
+    padding-left: 6vw;
+}
+nav#menu ul li{
+    display: inline-block;    
+    list-style-type: none;
+    margin-top: 2vh;
+    margin-right: 5vw;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3vw;
+    position: relative;
+    font-weight: 100;
+}
+nav a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+#main{
+    width: 99.1vw;
+    display: flex;
+    height: 93vh;
+    flex-direction: column;
+}
+/*---LEFT---*/
+#head{
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    justify-content: center;
+
+}
+#h-header{
+    margin-top: 8vh;
+    height: 45vh;
+    width: 62vw;
+    display: flex;
+    align-items: center;
+    padding-left: 4vw;
+    padding-top: 6vh;
+   
+}
+#play{
+    width: 10vw;
+    margin-bottom: 2.5vh;
+}
+#text{
+    font-family: 'ubuntu';
+    text-shadow: 3px 3px 3px #8C2022;
+}
+#h-header h1{
+    margin-left: -1vw;
+    font-size: 4.2vw;
+    /*animation*/
+    border-right: 3px solid;
+    width: 18ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1.5s steps(18), blinking 0.5s infinite step-end alternate;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
+}
+#text h2{
+    margin-left: 10vw;
+    font-size: 1.5vw;
+}
+#h-bottom{
+    margin-top: -4vh;
+    height: 50vh;
+    width: 58vw;
+   
+}
+#animation{
+    width: 18vw;
+    margin-top: 1vh;
+}
+/*-----mid bottom-----*/
+#mid-header{
+    width: 99.1vw;
+    min-height: 120vh;
+    background-image: url("../img/blur02.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-mid{
+    height: 70vh;
+    width: 90vw;
+    background-color: #3434349d;
+    box-shadow: 0px 0px 2px 2px #dca3a4ae;
+    border-radius: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12vh;
+}
+#Sobremim{
+    padding-top: 9vh;
+    color: #E8E8E8;
+    text-align: center;
+}
+#Sobremim h2{
+    font-size: 2vw;
+}
+#Sobremim p{
+    font-size: 1vw;
+    padding-top: 2vh;
+    width: 40vw;
+}
+#eventos{
+    height: 12vh;
+    width: 60vw;
+    margin-left: 0.5vw;
+    margin-top: 20vh;
+    display: flex;
+}
+#one p, #two p, #three p, #four p{
+    width: 5vw;
+    font-size: 0.7vw;
+    color: rgba(239, 239, 239, 0.903);
+    margin-left: 0.2vw;
+}
+#one, #two, #three, #four{
+    border-left: 3px solid #555555;
+    height: 12vh;
+    
+}
+#five, #six, #seven, #eight, #nine{
+    border-left: 3px solid #127396;
+    height: 12vh;
+}
+#one{
+    width: 6.1vw;
+}
+#two{
+    width: 6.1vw;
+}
+#three{
+    width: 6.05vw;
+}
+#four{
+    width: 6.02vw;
+}
+#five{
+    width: 7.05vw;
+}
+#six{
+    width: 6.96vw;
+}
+#seven{
+    width: 7vw;
+}
+#eight{
+    width: 7vw;
+}
+#five p, #six p, #seven p, #eight p, #nine p{
+    color: rgba(239, 239, 239, 0.903);
+    margin-left: 0.2vw;
+    font-size: 0.7vw;
+    width: 6vw;
+}
+#linha{
+    height: 4vh;
+    width: 60vw;
+    display: flex;
+
+}
+#adm{
+    height: 6px;
+    width: 25vw;
+    background-color: #555555;
+    display: flex;
+    justify-content: space-between;
+}
+.ponto-1, .ponto-2, .ponto-3, .ponto-4,.ponto-5{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #E8E8E8;
+    margin-top: -4px;
+}
+.legenda{
+    margin-top: 1.5vh;
+    margin-left: -0.5vw;
+    color: #E8E8E8;
+}
+#ti{
+    height: 6px;
+    width: 35vw;
+    background-color: #127396;
+    display: flex;
+    justify-content: space-between;
+}
+#linha2{
+    height: 6px;
+    width: 54vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6.1vw;
+    background-color: #8C2022;
+}
+/*-----mid bottom-----*/
+#mid-bottom{
+    min-height: 130vh;
+    width: 99.1vw;
+    background-image: url("../img/blur0.png");
+    background-size: cover;
+}
+#conhecimentos{
+    width: 99.1vw;
+    box-shadow: 0px 0px 3px 3px #dca3a4ae;
+    color: #E8E8E8;
+    font-size: 1.5vw;
+    background-color: #3434349d; 
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #7c7c7c;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#boxes{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 110vh;
+    margin-top: 5vh;
+
+}
+.box, .secondbox{
+    background-color: #3434349d;
+    width: 65vw;
+    height: 23vh;
+    text-align: justify;
+    border-radius: 0.3vw;
+    box-shadow: 2px 2px 3px 1px #dca3a4ae, 2px 2px 6px 2px #dca3a4ae;
+}
+.box{
+    margin-left: -13vw;
+}
+.secondbox{
+    margin-left: 13vw;
+}
+.label h3{
+   padding-top: 3vh;
+   padding-left: 2vw;
+   color: #ffffff;
+   font-family: 'ubuntu';
+   font-size: 1.4vw;
+}
+#icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4vh;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+.logo small{
+    font-weight: 500;
+    font-size: 0.8vw;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0.5vh;
+    width: 3.6vw;
+    margin-left: -0.3vw;
+}
+#icons img{
+    width:3vw;
+    height: 6vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.empty{
+    width:3vw;
+    height: 6vh;
+    border: 2px dashed #E8E8E8;
+    border-radius: 3px;
+    color: #E8E8E8;
+    text-align: center;
+    font-size: 2.3vw;
+}
+footer{
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    width: 99.1vw;
+    background-color: #212121;
+    color: #E8E8E8;
+    display:flex;
+    justify-content: space-around;
+    box-shadow: -2px -2px 2px 2px #dca3a4ae;
+}
+#creditos a, #contato a{
+    text-decoration: none;
+    color: #dca3a4d4
+}
+#creditos h4, #contato h4{
+    text-decoration: none;
+    color: #f0f0f0d4;
+    font-size: 1vw;
+}
+#creditos p, #contato p{
+    text-decoration: none;
+    color: #cececed4;
+    font-size: 0.8vw;
+}
+#topo{
+    position: fixed;
+    bottom: 0.7vw;
+    right: 0.7vw;
+    animation: MoveUp 2s infinite ;
+}
+
+@keyframes MoveUp{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(1vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#topo img:hover{
+    cursor: pointer;
+}
+
