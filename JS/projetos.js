@@ -2,15 +2,19 @@ const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-bt');
 const btnNext = document.getElementById('next-bt');
 
+
 let currentSlide = 0;
 
 function hideSlider(){
     slider.forEach(item => item.classList.remove('on'))
 }
 
+
 function showSlider(){
     slider[currentSlide].classList.add('on')
 }
+
+
 function nextSlider(){
     hideSlider()
     if(currentSlide == slider.length -1) {
@@ -24,6 +28,7 @@ function nextSlider(){
     inline: "center"
   });
 }
+
 
 function prevSlider() {
     hideSlider()
