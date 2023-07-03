@@ -152,6 +152,18 @@
             font-size: 0.6vw;
             color: red;
         }
+        #voltar{
+            position: fixed;
+            top: 8px;
+            left: 12px;
+            display: flex;
+        }
+        #voltar img{
+            width: 2.5vw;
+        }
+        #voltar a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body> 
@@ -266,6 +278,9 @@
                 <button id="input" onclick="enviar()" form="formulario">Cadastrar</button>
             </div>
         </form>
+    </div>
+    <div id="voltar">
+        <a href="../html/projetos.html"><img src="../img/icons8-seta-longa-à-direita-48.png" alt="voltar" title="Voltar"></a>
     </div>
     <script src="../js/jquery-3.7.0.min.js"></script>
     <script src="../js/jquery.mask.min.js"></script>

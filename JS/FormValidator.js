@@ -36,6 +36,6 @@ let span1 = document.getElementById('span1');
                 span3.style.display = 'none';
                 span4.style.display = 'block';
             } else {
-                window.location.href = 'home.html';
+                window.location.href = 'FormValidatorSucess.html';
             }
         }
