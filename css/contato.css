@@ -50,7 +50,7 @@ h3{
     flex-direction: column;
 }
 .icon img{
-    width: 50px;
+    width: 60px;
 }
 .icon img:hover{
     scale: 1.2;
@@ -74,19 +74,18 @@ small{
     margin-top: 1vh;
 }
 #whatsapp{
-    background-color: #26a32673;
-    border-radius: 10vw;
-    width: 15vw;
+    background-color: #207c20;
 }
 #email{
-    background-color: #388fd273;
-    border-radius: 10vw;
-    width: 23vw;
+    background-color: #286695;
 }
 #whatsapp, #email{
-    height: 5vh;
+    width: 23vw;
+    width: 23vw;
+    border-radius: 0.5rem;
+    height: 7vh;
     display:flex;
-    color: #f4f2f2dd;
+    color: #f4f2f2f2;
     font-size: 1.2vw;
     font-family: 'IBM Plex Mono', monospace;
     justify-content: center;
