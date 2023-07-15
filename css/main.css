@@ -61,11 +61,11 @@ nav a:hover::after{
     text-align: center;
     align-items: center;
     color: white;
-    justify-content: center;
+    justify-content: space-evenly;
 
 }
 #h-header{
-    margin-top: 8vh;
+    margin-top: 7vh;
     height: 45vh;
     width: 62vw;
     display: flex;
@@ -87,10 +87,10 @@ nav a:hover::after{
     font-size: 4.2vw;
     /*animation*/
     border-right: 3px solid;
-    width: 18ch;
+    width: 16ch;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 1.5s steps(18), blinking 0.5s infinite step-end alternate;
+    animation: typing 1.5s steps(16), blinking 0.5s infinite step-end alternate;
 }
 @keyframes typing{
     from{
@@ -106,8 +106,48 @@ nav a:hover::after{
     margin-left: 10vw;
     font-size: 1.5vw;
 }
+#h-mid{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+}
+.bt{
+    width: 8rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    color: #e8e8e8e8;
+    box-shadow: 1px 1px 3px white;
+    border: none;
+}
+.bt:hover{
+    background-color: #e8e8e8e8;
+    scale: 1.03;
+    transition: background-color 0.2s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.git:hover{
+    color: rgb(0, 0, 0);
+}
+.linked:hover{
+    color: rgb(23, 42, 112);
+}
+.bt a{
+    text-decoration: none;
+    color: #e8e8e8e8;
+}
+.git{
+    background-color: rgb(0, 0, 0);
+}
+.linked{
+    background-color: rgb(23, 42, 112);
+}
 #h-bottom{
-    margin-top: -4vh;
+    margin-top: -1vh;
     height: 50vh;
     width: 58vw;
    
@@ -344,7 +384,7 @@ footer{
 #creditos h4, #contato h4{
     text-decoration: none;
     color: #f0f0f0d4;
-    font-size: 1vw;
+    font-size: 1.4rem;
 }
 #creditos p, #contato p{
     text-decoration: none;
@@ -435,20 +475,19 @@ footer{
     align-items: center;
     width: 68vw;
     height: 45vh;
-    border-radius: 1vw;
     overflow-x: auto;
     gap: 1vw;
 }
 .carrossel img{
     width: 22vw;
     height: 24vh;
-    border-radius: 2vw 2vw 0 0;
+    border-radius: 1rem 1rem 0 0;
     border: 2px solid rgb(40, 40, 40);
 }
 .describe{
     width: 22vw;
     height: 14vh;
-    border-radius: 0 0 2vw 2vw;
+    border-radius: 0 0 1rem 1rem;
     background-color: #55a5bb;
     color: #2c2c2ce8;
     text-align: center;
