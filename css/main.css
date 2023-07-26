@@ -13,7 +13,39 @@ body{
     min-height: 100vh;
     width: 99vw;
 }
-/*---MENU---*/
+/*---MENU mobile---*/
+.menu-bar{
+    display: none;
+}
+.menu-bar{
+    color: white;
+    font-size: 7.5vw;
+    margin: 2.5vw;
+    background-color: transparent;
+    border: none;
+}
+.menu-mobile{
+    display: none;
+    height: 90vh;
+    width: 100vw;
+    background-color: #6767672c;
+}
+.menu-mobile ul{
+    margin-top: -5vh;
+    height: 90vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu-mobile ul li a{
+    font-size: 4.5vw;
+}
+.menu-mobile ul li{
+    text-align: center;
+}
+/*--menu--*/
 nav#menu{
     height: 6vh;
     width: 99vw;
@@ -657,12 +689,12 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         height: 23vh;
     }
     #icons img{
-        height: 6vh;
-        width: 6vw;
+        height: 5.5vh;
+        width: 7vw;
     }
     .empty{
-        height: 6vh;
-        width: 6vw;
+        height: 5.5vh;
+        width: 7vw;
     }
     .logo small{
         font-size: 1.7vw;
@@ -719,5 +751,163 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     #conhecimentos{
         width: 100vw;
         font-size: 2.8vw;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .on{
+        display: block;
+    }
+    .off{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+        margin: 3vw;
+        font-size: 7vw;
+    }
+    #h-header{
+        width: 70vw;
+    }
+    #h-header h1{
+        font-size: 8vw;
+        margin-left: -2vw;
+    }
+    #h-header h2{
+        font-size: 3vw;
+    }
+    #play{
+        width: 19vw;
+        margin-left: -16vw;
+    }
+    #animation{
+        margin-top: 3vh;
+        width: 40vw;
+    }
+    
+    /*---*/
+
+    .label h3{
+        font-size: 3.2vw;
+    }
+    .box, .secondbox{
+        margin-left: 0;
+        width: 94vw;
+        height: 23vh;
+        box-shadow: 0px 0px 8px 2.5px #dca3a4ae;
+    }
+    #icons img{
+        height: 7vh;
+        width: 9.5vw;
+    }
+    .empty{
+        height: 7vh;
+        width: 9.5vw;
+    }
+    .logo small{
+        font-size: 2.3vw;
+        width: 9.5vw;
+    }
+    #icons{
+        flex-wrap: wrap;
+    }
+    .rsp{
+        display: none;
+    }
+
+    
+    /*---*/
+
+    .container-slider{
+        width: 98vw;
+    }
+    #header-slider h2{
+        font-size: 7vw;
+    }
+    #bottom-slider{
+        width: 98vw;
+    }
+    .carrossel{
+        width: 95vw;
+        gap: .5vw;
+        height: 36vh;
+    }
+    .carrossel img{
+        width: 42vw;
+        height: 22.5vh;
+    }
+    .describe{
+        width: 42vw;
+        height: 15vh;
+    }
+    #prev-bt img, #next-bt img{
+        width: 6.5vw;
+        height: 5.5vh;
+    }
+    .describe p{
+        font-size: 2.1vw;
+        width: 35vw;
+    }
+    .describe h3{
+        font-size: 2.7vw;
+    }
+    .link{
+        width: 13vw;
+        font-size: 1.8vw;
+    }
+    .btns{
+        width: 35vw;
+    }
+    #conhecimentos{
+        font-size: 3.7vw;
+    }
+    #creditos h4, #contato h4{
+        font-size: 3.5vw;
+    }
+    #creditos p, #contato p, #creditos a{
+        font-size: 3vw;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    #conhecimentos{
+        font-size: 4.2vw;
+    }
+    #header-slider h2{
+        font-size: 8vw;
+    }
+    .carrossel{
+        width: 80vw;
+        gap: .5vw;
+        height: 36vh;
+    }
+    .carrossel img{
+        width: 80vw;
+        height: 22.5vh;
+    }
+    .describe{
+        width: 80vw;
+        height: 15vh;
+    }
+    #prev-bt img, #next-bt img{
+        width: 8.5vw;
+        height: 5.5vh;
+    }
+    .describe p{
+        font-size: 3vw;
+        width: 70vw;
+    }
+    .describe h3{
+        font-size: 4vw;
+        margin-top: 1vh;
+    }
+    .link{
+        width: 19vw;
+        font-size: 2.8vw;
+    }
+    .btns{
+        width: 60vw;
     }
   }

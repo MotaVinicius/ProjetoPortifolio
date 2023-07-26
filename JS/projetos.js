@@ -1,3 +1,26 @@
+const menuBar = document.querySelector('.fa-solid')
+
+function menuMobile() {
+    let menuMobile = document.querySelector('.menu-mobile')
+    if(menuMobile.classList.contains('off')){
+        menuMobile.classList.remove('off')
+        menuMobile.classList.add('on')
+        menuBar.classList.remove('fa-bars')
+        menuBar.classList.add('fa-xmark')
+
+    } else {
+        menuMobile.classList.remove('on')
+        menuMobile.classList.add('off')
+        menuBar.classList.remove('fa-xmark')
+        menuBar.classList.add('fa-bars')
+    }
+}
+
+
+
+
+
+
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-bt');
 const btnNext = document.getElementById('next-bt');
