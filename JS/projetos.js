@@ -47,5 +47,3 @@ function prevSlider() {
 
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
-
-console.log(slider)

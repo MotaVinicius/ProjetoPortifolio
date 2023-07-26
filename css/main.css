@@ -18,7 +18,7 @@ nav#menu{
     height: 6vh;
     width: 99vw;
     text-align: center;
-    padding-left: 6vw;
+    padding-left: 0vw;
 }
 nav#menu ul li{
     display: inline-block;    
@@ -65,7 +65,7 @@ nav a:hover::after{
 
 }
 #h-header{
-    margin-top: 7vh;
+    margin-top: 5vh;
     height: 45vh;
     width: 62vw;
     display: flex;
@@ -132,19 +132,21 @@ nav a:hover::after{
 }
 .git:hover{
     color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 5px black;
 }
 .linked:hover{
     color: rgb(23, 42, 112);
+    box-shadow: 1px 1px 5px rgb(23, 42, 112);
 }
 .bt a{
     text-decoration: none;
     color: #e8e8e8e8;
 }
 .git{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.649);
 }
 .linked{
-    background-color: rgb(23, 42, 112);
+    background-color: rgba(23, 42, 112, 0.67);
 }
 #h-bottom{
     margin-top: -1vh;
@@ -156,7 +158,7 @@ nav a:hover::after{
     width: 18vw;
     margin-top: 1vh;
 }
-/*-----mid bottom-----*/
+/*-----mid-----*/
 #mid-header{
     width: 99.1vw;
     min-height: 120vh;
@@ -389,7 +391,7 @@ footer{
 #creditos p, #contato p{
     text-decoration: none;
     color: #cececed4;
-    font-size: 0.8vw;
+    font-size: 1rem;
 }
 #contato{
     line-height: 23px;
@@ -421,12 +423,10 @@ footer{
     }
 }
 
-
-
 /*projetos*/
 
 #projetos{
-    min-height: 100vh;
+    min-height: 95vh;
     background-image: url("../img/blur02.png");
 
 }
@@ -435,7 +435,6 @@ footer{
     justify-content: center;
     align-items: center;
     min-height: 95vh;
-    flex-direction: column;
 }
 .container-slider{
     width: 80vw;
@@ -460,7 +459,6 @@ footer{
     border-bottom: 2px solid #7e7e7ee8;
     background-color: #34343400;
     border-radius: 1vw;
-    
 }
 #bottom-slider{
     height: 35vh;
@@ -472,7 +470,6 @@ footer{
 .carrossel{
     position: relative;
     display: flex;
-    align-items: center;
     width: 68vw;
     height: 45vh;
     overflow-x: auto;
@@ -512,10 +509,11 @@ footer{
     color: black;
     font-weight: 600;
     transition: background-color 0.5s;
+    cursor: pointer;
 }
 .link{
-    width: 95px;
-    height: 32px;
+    width: 5.3vw;
+    height: 3.2vh;
     border-radius: 0.2rem;
     border: none;
     background-color: #212121;
@@ -555,3 +553,131 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     scrollbar-width: none; /* Firefox */
   }
 
+  @media screen and (max-width: 1024px) {
+    nav a{
+        font-size: 2.1vw;   
+    }
+    nav#menu ul {
+        margin-left: 6vw;
+    }
+    #h-header h1{
+        font-size: 5.5vw;
+    }
+    #h-header h2{
+        font-size: 2.2vw;
+    }
+    #play{
+        width: 14vw;
+        margin-left: -5vw;
+    }
+    #animation{
+        margin-top: 3vh;
+        width: 27vw;
+    }
+    #Sobremim h2{
+        font-size: 3.5vw;
+    }
+    #Sobremim p{
+        font-size: 1.6vw;
+        width: 60vw;
+    }
+    #linha{
+        
+    }
+    /**/
+    #conhecimentos{
+        height: 8vh;
+        font-size: 2.5vw;
+    }
+    .box, .secondbox{
+        width: 80vw;
+        height: 23vh;
+    }
+    .label h3{
+        font-size: 2.2vw;
+    }
+    #icons img{
+        height: 7vh;
+        width: 6vw;
+    }
+    .empty{
+        height: 7vh;
+        width: 6vw;
+    }
+    .logo small{
+        font-size: 1.2vw;
+        width: 6vw;
+    }
+    .link{
+        width: 6.5vw;
+        font-size: 1.2vw;
+    }
+    #header-slider{
+        width: 37vw;
+        font-size: 2.2vw;
+    }
+    .carrossel img{
+        height: 18vh;
+        border: 2px solid rgb(40, 40, 40);
+    }
+    .describe p{
+        font-size: 1.3vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav a{
+        font-size: 2.5vw;   
+    }
+    #h-header h1{
+        font-size: 6.1vw;
+    }
+    #h-header h2{
+        font-size: 2.2vw;
+    }
+    #play{
+        width: 16vw;
+        margin-left: -8vw;
+    }
+    #animation{
+        margin-top: 3vh;
+        width: 35vw;
+    }
+    .container-slider{
+        width: 95vw;
+    }
+    #header-slider{
+        width: 55vw;
+        font-size: 3.3vw;
+    }
+    #bottom-slider{
+        width: 92vw;
+    }
+    .carrossel{
+        width: 85vw;
+    }
+    .carrossel img{
+        width: 39vw;
+    }
+    .describe{
+        width: 39vw;
+    }
+    #prev-bt img, #next-bt img{
+        width: 6.5vw;
+        height: 5.5vh;
+    }
+    .describe p{
+        font-size: 1.9vw;
+        width: 32vw;
+    }
+    .describe h3{
+        font-size: 2.7vw;
+    }
+    .link{
+        width: 10vw;
+        font-size: 1.6vw;
+    }
+    #creditos h4, #contato h4{
+        font-size: 2.6vw;
+    }
+  }
