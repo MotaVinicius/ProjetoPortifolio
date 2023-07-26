@@ -449,7 +449,7 @@ footer{
 }
 #header-slider{
     height: 5.9vh;
-    width: 25vw;
+    width: 20vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -459,6 +459,9 @@ footer{
     border-bottom: 2px solid #7e7e7ee8;
     background-color: #34343400;
     border-radius: 1vw;
+}
+#header-slider h2{
+    font-size: 2.8vw;
 }
 #bottom-slider{
     height: 35vh;
@@ -502,7 +505,7 @@ footer{
 .btns{
     display: flex;
     justify-content: space-evenly;
-    width: 300px;
+    width: 22vw;
 }
 .link:hover{
     background-color: #e8e8e8e8;
@@ -590,8 +593,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         font-size: 2.5vw;
     }
     .box, .secondbox{
-        width: 80vw;
-        height: 23vh;
+        width: 83vw;
+        height: 25vh;
     }
     .label h3{
         font-size: 2.2vw;
@@ -612,9 +615,11 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         width: 6.5vw;
         font-size: 1.2vw;
     }
+    #header-slider h2{
+        font-size: 5vw;
+    }
     #header-slider{
-        width: 37vw;
-        font-size: 2.2vw;
+        width: 35vw;
     }
     .carrossel img{
         height: 18vh;
@@ -643,12 +648,31 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         margin-top: 3vh;
         width: 35vw;
     }
+    .label h3{
+        font-size: 2.8vw;
+    }
+    .box, .secondbox{
+        margin-left: 0;
+        width: 94vw;
+        height: 23vh;
+    }
+    #icons img{
+        height: 6vh;
+        width: 6vw;
+    }
+    .empty{
+        height: 6vh;
+        width: 6vw;
+    }
+    .logo small{
+        font-size: 1.7vw;
+        width: 6.8vw;
+    }
     .container-slider{
         width: 95vw;
     }
-    #header-slider{
-        width: 55vw;
-        font-size: 3.3vw;
+    #header-slider h2{
+        font-size: 6vw;
     }
     #bottom-slider{
         width: 92vw;
@@ -679,5 +703,21 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     }
     #creditos h4, #contato h4{
         font-size: 2.6vw;
+    }
+    #projetos{
+        width: 100vw;
+    }
+    #mid-bottom{
+        width: 100vw;
+    }
+    #mid-header{
+        width: 100vw;
+    }
+    footer{
+        width: 100vw;
+    }
+    #conhecimentos{
+        width: 100vw;
+        font-size: 2.8vw;
     }
   }
