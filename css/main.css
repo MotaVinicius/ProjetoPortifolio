@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -201,7 +202,7 @@ nav a:hover::after{
     align-items: center;
 }
 #container-mid{
-    height: 70vh;
+    height: 75vh;
     width: 90vw;
     background-color: #3434349d;
     box-shadow: 0px 0px 2px 2px #dca3a4ae;
@@ -224,96 +225,55 @@ nav a:hover::after{
     padding-top: 2vh;
     width: 40vw;
 }
-#eventos{
-    height: 12vh;
-    width: 60vw;
-    margin-left: 0.5vw;
-    margin-top: 20vh;
+.vertentes{
+    flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    font-family: 'Tektur', cursive;
 }
-#one p{
-    width: 24vw;
+.item{
+    width: 12vw;
+    height: 30vh;
+    border-radius: .2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .4s;
+    border-bottom: 1px solid #e8e8e8e8;
+}
+.item h2{
     text-align: center;
-    font-size: 1vw;
-    color: rgba(239, 239, 239, 0.903);
-    margin-left: 0.2vw;
+    padding-top: 1vw;
+    border-bottom: 1px solid #212121;
+    width: 80%;
+    margin-bottom: 1.5vh;
 }
-#one{
-    border-left: 3px solid #555555;
-    height: 12vh;
-    
+.desenvolvimento h2{
+    border-bottom: 1px solid #e8e8e8e8;
+    font-size: 1.1vw;
 }
-#five, #six, #eight, #nine{
-    border-left: 3px solid #127396;
-    height: 12vh;
-}
-#one{
-    width: 24.3vw;
-}
-#five{
-    width: 7.05vw;
-}
-#six{
-    width: 14vw;
-}
-#seven{
-    width: 7vw;
-}
-#eight{
-    width: 7vw;
-}
-#five p, #eight p, #nine p{
-    color: rgba(239, 239, 239, 0.903);
-    margin-left: 0.2vw;
-    font-size: 0.7vw;
-    width: 6vw;
-}
-#six p{
-    width: 13vw;
-    color: rgba(239, 239, 239, 0.903);
-    margin-left: 0.2vw;
+.item p{
+    margin-top: 2vh;
+    text-align: center;
+    width: 95%;
     font-size: 0.8vw;
-    text-align: center;
 }
-#linha{
-    height: 4vh;
-    width: 60vw;
-    display: flex;
-
+.hardware{
+    background-color: rgb(193, 96, 17);
 }
-#adm{
-    height: 6px;
-    width: 25vw;
-    background-color: #555555;
-    display: flex;
-    justify-content: space-between;
+.desenvolvimento{
+    background-color: #212121;
+    color: #e8e8e8e8;
 }
-.ponto-1, .ponto-2, .ponto-3, .ponto-4,.ponto-5{
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: #E8E8E8;
-    margin-top: -4px;
+.cloud{
+    background-color: #5cadd3;
 }
-.legenda{
-    margin-top: 1.5vh;
-    margin-left: -0.5vw;
-    color: #E8E8E8;
-}
-#ti{
-    height: 6px;
-    width: 35vw;
-    background-color: #127396;
-    display: flex;
-    justify-content: space-between;
-}
-#linha2{
-    height: 6px;
-    width: 54vw;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 6.1vw;
-    background-color: #8C2022;
+.item:hover{
+    scale: 1.2;
+    transition: all .4s;
+    box-shadow: 0px 0px 10px 2px rgb(221, 221, 221);
 }
 /*-----mid bottom-----*/
 #mid-bottom{
