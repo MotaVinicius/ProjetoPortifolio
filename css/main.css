@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -86,7 +87,7 @@ nav a:hover::after{
     height: 93vh;
     flex-direction: column;
 }
-/*---LEFT---*/
+/*---Head---*/
 #head{
     height: 98vh;
     display: flex;
@@ -191,7 +192,7 @@ nav a:hover::after{
     width: 18vw;
     margin-top: 1vh;
 }
-/*-----mid-----*/
+/*-----Sobre mim-----*/
 #mid-header{
     width: 99.1vw;
     min-height: 120vh;
@@ -231,49 +232,60 @@ nav a:hover::after{
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    font-family: 'Tektur', cursive;
+    font-family: 'Rajdhani', sans-serif;
 }
 .item{
     width: 12vw;
-    height: 30vh;
+    height: 29vh;
     border-radius: .2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all .4s;
-    border-bottom: 1px solid #e8e8e8e8;
+    border-bottom: 2px solid #e8e8e8e8;
+    color: #ffffffe8;
 }
 .item h2{
     text-align: center;
     padding-top: 1vw;
-    border-bottom: 1px solid #212121;
+    border-bottom: 1px solid #ffffffe8;
     width: 80%;
     margin-bottom: 1.5vh;
+    font-size: 1.4vw;
 }
 .desenvolvimento h2{
     border-bottom: 1px solid #e8e8e8e8;
-    font-size: 1.1vw;
 }
 .item p{
     margin-top: 2vh;
     text-align: center;
     width: 95%;
-    font-size: 0.8vw;
+    font-size: .8vw;
+}
+.soft-skills h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.91);
+    margin-bottom: .7vh;
+}
+.soft-skills{
+    background-color: #f8f8f8;
+    color: #000000fb;
+    border-bottom: 2px solid #000000e8;
 }
 .hardware{
-    background-color: rgb(193, 96, 17);
+    background-color: #9e1e64;
 }
 .desenvolvimento{
-    background-color: #212121;
-    color: #e8e8e8e8;
+    background-color: #383838;
+    color: #ffffffe8;
 }
 .cloud{
-    background-color: #5cadd3;
+    background-color: #198cce;
 }
 .item:hover{
-    scale: 1.2;
+    cursor: default;
+    scale: 1.23;
     transition: all .4s;
-    box-shadow: 0px 0px 10px 2px rgb(221, 221, 221);
+    box-shadow: 0px 0px 10px 1px rgb(221, 221, 221);
 }
 /*-----mid bottom-----*/
 #mid-bottom{
@@ -570,14 +582,20 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         width: 27vw;
     }
     #Sobremim h2{
-        font-size: 3.5vw;
+        font-size: 3.6vw;
     }
     #Sobremim p{
-        font-size: 1.6vw;
+        font-size: 1.8vw;
         width: 60vw;
     }
-    #linha{
-        
+    .item{
+        width: 16vw;
+    }
+    .item h2{
+        font-size: 2vw;
+    }
+    .item p{
+        font-size: 1.5vw;
     }
     /**/
     #conhecimentos{
@@ -586,18 +604,18 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     }
     .box, .secondbox{
         width: 83vw;
-        height: 25vh;
+        height: 23vh;
     }
     .label h3{
-        font-size: 2.2vw;
+        font-size: 2.4vw;
     }
     #icons img{
         height: 7vh;
-        width: 6vw;
+        width: 6.5vw;
     }
     .empty{
         height: 7vh;
-        width: 6vw;
+        width: 6.5vw;
     }
     .logo small{
         font-size: 1.2vw;
@@ -640,9 +658,30 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         margin-top: 3vh;
         width: 35vw;
     }
+    /* sobre */
+    #Sobremim h2{
+        font-size: 4.2vw;
+    }
+    #Sobremim p{
+        font-size: 2.2vw;
+    }
+    .item{
+        width: 18vw;
+    }
+    .item h2{
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+    .item p{
+        font-size: 1.7vw;
+    }
     .label h3{
         font-size: 2.8vw;
     }
+    .vertentes{
+        gap: 3vw;
+    }
+    /* icons */
     .box, .secondbox{
         margin-left: 0;
         width: 94vw;
@@ -660,6 +699,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         font-size: 1.7vw;
         width: 6.8vw;
     }
+    .rsp{
+        display: none;
+    }
+    /* slider */
     .container-slider{
         width: 95vw;
     }
@@ -726,7 +769,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     .menu-bar{
         display: block;
         margin: 3vw;
-        font-size: 7vw;
+        font-size: 9vw;
     }
     #h-header{
         width: 70vw;
@@ -745,6 +788,36 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     #animation{
         margin-top: 3vh;
         width: 40vw;
+    }
+    /* */
+    #container-mid{
+        height: 95vh;
+    }
+    #Sobremim{
+        padding-top: 4vh;
+        height: 30vh;
+    }
+    #Sobremim h2{
+        font-size: 5vw;
+    }
+    #Sobremim p{
+        font-size: 2.4vw;
+        text-align: justify;
+    }
+    .vertentes{
+        flex-wrap: wrap;
+        width: 85vw;
+        margin-top: -6vh;
+    }
+    .item{
+        width: 32vw;
+    }
+    .item h2{
+        font-size: 3vw;
+        margin-bottom: 0;
+    }
+    .item p{
+        font-size: 2.6vw;
     }
     
     /*---*/
@@ -769,9 +842,6 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     .logo small{
         font-size: 2.3vw;
         width: 9.5vw;
-    }
-    #icons{
-        flex-wrap: wrap;
     }
     .rsp{
         display: none;
@@ -824,10 +894,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         font-size: 3.7vw;
     }
     #creditos h4, #contato h4{
-        font-size: 3.5vw;
+        font-size: 3.2vw;
     }
     #creditos p, #contato p, #creditos a{
-        font-size: 3vw;
+        font-size: 2.7vw;
     }
   }
 
@@ -869,5 +939,69 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     }
     .btns{
         width: 60vw;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    #play{
+        margin-top: -4vh;
+    }
+    #animation{
+        width: 55vw;
+    }
+    #Sobremim h2{
+        font-size: 6.2vw;
+    }
+    #Sobremim p{
+        font-size: 3.5vw;
+        text-align: justify;
+        width: 80vw;
+    }
+    .item{
+        width: 38vw;
+    }
+    .item h2{
+        font-size: 4vw;
+        margin-bottom: 0;
+        padding-top: 1vh;
+    }
+    .item p{
+        font-size: 3.3vw;
+    }
+    #conhecimentos{
+        font-size: 5.3vw;
+    }
+    .box, .secondbox{
+        width: 92vw;
+        height: 20vh;
+    }
+    .label h3{
+        font-size: 4.5vw;
+    }
+    #icons img{
+        width: 11vw;
+        height: 6vh;
+    }
+    .empty{
+        height: 6vh;
+        width: 11vw;
+    }
+    .logo small{
+        font-size: 2.5vw;
+        width: 11vw;
+    }
+    #header-slider h2{
+        font-size: 8.5vw;
+    }
+    #creditos h4, #contato h4{
+        font-size: 3.6vw;
+    }
+    #creditos p, #contato p, #creditos a{
+        font-size: 3vw;
+    }
+    #h-header h1{
+        margin-top: -5vh;
+    }
+    #h-mid{
+        margin-top: -10vh;
     }
   }
