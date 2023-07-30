@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+:root{
+    --cor-fundo: #1a1a1afc;
+    --cor-primaria: #2c2c2ce7;
+    --cor-secundaria: #00a1ec;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--cor-fundo);
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+}
+nav button{
+    background-color: transparent;
+    border: none;
+    margin: 2vh 3vw;
+    
+}
+nav button i{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+nav button i:hover{
+    cursor: pointer;
+    color: #e7d944e8;
+    transition: all .4s;
+}
+nav h1{
+    margin: 1.4vh 2.8vw;
+    color: rgb(255, 255, 255);
+    font-size: 1.3vw;
+    cursor: default;
+}
+.logo{
+    color: #0087c6;
+    font-size: 2vw;
+}
+/*corpo login*/
+main{
+    height: 92vh;
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55vh;
+    width: 25vw;
+    background-color: var(--cor-primaria);
+    color: aliceblue;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 25px 2px var(--cor-secundaria);
+}
+#title{
+    margin-top: -3vh;
+    font-size: 1.45vw;
+    margin-bottom: 1vh;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: .4vh;
+}
+#title h1{
+    font-family: 'Ubuntu', sans-serif;
+    width: 6.5vw;
+    text-align: center;
+}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    gap: .8vh;
+    width: 14vw;
+    margin-bottom: -2vh;
+}
+label{
+    font-size: 1.1vw;
+}
+.input{
+    border-bottom: 2px solid var(--cor-secundaria);
+}
+.input i{
+    font-size: 1vw;
+    padding-left: .2vw;
+}
+.user, .senha{
+    width: 12vw;
+    border: none;
+    background-color: transparent;
+    padding: 0 0.5vw;
+    color: aliceblue;
+    font-size: 1vw;
+}
+.user:focus, .senha:focus{
+    outline: none;
+}
+.botao button{
+    padding: .8vh 5.3vw;
+    background-color: #00a1ecb7;
+    color: aliceblue;
+    border-radius: .3vw;
+    font-size: .9vw;
+    border: none;
+    font-weight: 600;
+    transition: all .4s;
+}
+.botao button:hover{
+    background-color: rgb(240, 248, 255);
+    color: #00a1ec;
+    transition: all .4s;
+    cursor: pointer;
+}
+.recuperar a{
+    color: var(--cor-secundaria)
+}
+/*light mode*/
+.fa-moon{
+    color: black;
+}
+.fa-moon:hover{
+    color: #00a1ec;
+}
+.light{
+    background-color: aliceblue;
+    color: rgb(27, 27, 27);
+}
+.span2, .span3{
+    color: transparent;
+    font-size: .6vw;
+    width: 20vw;
+}
+.span{
+    color: transparent;
+    font-size: .6vw;
+    width: 20vw;
+}
+
+.alerta, .ok{
+    position: absolute;
+    top: -200px;
+    background-color: #0087c6;
+    color: white;
+    border-radius: .2vw;
+    box-shadow: 0px 0px 10px 1px rgb(100, 100, 100);
+    font-weight: 600;
+    font-size: 1.1vw;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 10vh;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.close{
+    display: flex;
+    justify-content: end;
+    width: 25vw;
+    padding: .8vh .4vw 0 .4vw;
+}
+.message{
+    text-align: center;
+    padding-bottom: 2vh;
+}
+.message h2{
+    font-size: 1.2vw;
+}
+#btn-pop{
+    background: transparent;
+    color: white;
+    padding: .1vw;
+    border: none;
+    cursor: pointer;
+}
+#btn-pop:hover{
+    color: red;
+}
+.fa-xmark{
+    font-size: 1.2vw;
+}
+#btn-ok{
+    width: 5vw;
+    height: 2.3vh;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    border-radius: .15vw;
+    border: none;
+    cursor: pointer;
+}
+#btn-ok:hover{
+    background-color: var(--cor-primaria);
+    color: white;
+}
+.aparecer{
+    opacity: 1;
+    transform: translateY(250%);
+}
+.back{
+    position: absolute;
+    top: 10vh;
+    left: 2.8vw;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.back i{
+    font-size: 2.1vw;
+    margin-left: .2vw;
+}
+.back small{
+    font-size: .5vw;
+}
+.back a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.senha::placeholder, .user::placeholder{
+    text-align: center;
+    font-size: .9vw;
+}
+

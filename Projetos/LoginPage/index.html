@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <header class="toggle1">
+        <nav>
+            <h1 class="logoh"><span class="logo">L</span>ogin<span class="logo">P</span>age</h1>
+            <button onclick="darkMode()" title="Dark Mode/Light Mode"><i class="fa-solid fa-sun mode"></i></button></nav>
+    </header>
+    <main class="toggle2">
+        <section class="toggle3">
+            <div id="title">
+                <h1>Login</h1>
+            </div>
+            <div id="inputs">
+                <div class="field">
+                    <label for="usuario">Usuário</label>
+                    <div class="input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" class="user" placeholder="Nome de usuário" autofocus>
+                    </div>
+                </div>
+                <div class="span">
+                    <span>Usuario deve conter no minimo 5 caracteres</span>
+                </div>
+                <div class="field">
+                    <label for="senha">Senha</label>
+                    <div class="input">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" class="senha" placeholder="****************">
+                    </div>
+                </div>
+                <div class="span2">
+                    <span>Senha deve conter no minimo 8 caracteres</span>
+                </div>
+            </div>
+            <div class="botao">
+                <button onclick="entrar()" id="btn">Entrar</button>
+            </div>
+            <div class="recuperar">
+                Esqueceu sua senha? <a href="senha.html">Clique aqui</a> 
+            </div>
+        </section>
+        <div class="alerta">
+            <div class="close">
+                <button id="btn-pop"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="message">
+                <h2>Preencha os campos corretamente</h2>
+            </div>
+            <div class="empty"></div>
+        </div>
+    </main>
+</body>
+    <script src="script.js"></script>
+</html>
