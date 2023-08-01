@@ -467,6 +467,10 @@ footer{
 #header-slider h2{
     font-size: 2.8vw;
 }
+#mid-legenda h4{
+    color: #e8e8e8e8;
+    font-size: 1vw;
+}
 #bottom-slider{
     height: 35vh;
     display: flex;
@@ -490,7 +494,7 @@ footer{
 }
 .describe{
     width: 22vw;
-    height: 14vh;
+    height: 16vh;
     border-radius: 0 0 1rem 1rem;
     background-color: #55a5bb;
     color: #2c2c2ce8;
@@ -536,8 +540,6 @@ footer{
 }
 .on{
     opacity: 1;
-}
-.on img, .on .describe{
 }
 #prev-bt img, #next-bt img{
     width: 3vw;
@@ -638,6 +640,9 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     .describe p{
         font-size: 1.3vw;
     }
+    #mid-legenda h4{
+        font-size: 2vw;
+  }
   }
 
   @media screen and (max-width: 768px) {
@@ -755,6 +760,9 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         width: 100vw;
         font-size: 2.8vw;
     }
+    #mid-legenda h4{
+        font-size: 2.5vw;
+  }
   }
   @media screen and (max-width: 600px) {
     .on{
@@ -899,6 +907,9 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     #creditos p, #contato p, #creditos a{
         font-size: 2.7vw;
     }
+    #mid-legenda h4{
+        font-size: 3.5vw;
+  }
   }
 
   @media screen and (max-width: 520px) {
@@ -1004,4 +1015,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     #h-mid{
         margin-top: -10vh;
     }
+    #mid-legenda h4{
+        font-size: 4.5vw;
   }
+}
