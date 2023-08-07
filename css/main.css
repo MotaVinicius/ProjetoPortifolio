@@ -13,7 +13,7 @@ body{
 
 #container{
     min-height: 100vh;
-    width: 99vw;
+    min-width: 99.1vw;
 }
 /*---MENU mobile---*/
 .menu-bar{
@@ -29,7 +29,7 @@ body{
 .menu-mobile{
     display: none;
     height: 90vh;
-    width: 100vw;
+    min-width: 99.1vw;
     background-color: #6767672c;
 }
 .menu-mobile ul{
@@ -50,7 +50,7 @@ body{
 /*--menu--*/
 nav#menu{
     height: 6vh;
-    width: 99vw;
+    min-width: 99.1vw;
     text-align: center;
     padding-left: 0vw;
 }
@@ -82,7 +82,7 @@ nav a:hover::after{
 }
 
 #main{
-    width: 99.1vw;
+    min-width: 99.1vw;
     display: flex;
     height: 93vh;
     flex-direction: column;
@@ -142,7 +142,7 @@ nav a:hover::after{
 }
 #h-mid{
     display: flex;
-    width: 100%;
+    min-width: 99.1vw;
     justify-content: center;
     gap: 40px;
     margin-bottom: 2rem;
@@ -194,7 +194,7 @@ nav a:hover::after{
 }
 /*-----Sobre mim-----*/
 #mid-header{
-    width: 99.1vw;
+    min-width: 99.1vw;
     min-height: 120vh;
     background-image: url("../img/blur02.png");
     background-size: cover;
@@ -290,12 +290,12 @@ nav a:hover::after{
 /*-----mid bottom-----*/
 #mid-bottom{
     min-height: 130vh;
-    width: 99.1vw;
+    min-width: 99.1vw;
     background-image: url("../img/blur0.png");
     background-size: cover;
 }
 #conhecimentos{
-    width: 99.1vw;
+    min-width: 99.1vw;
     box-shadow: 0px 0px 3px 3px #dca3a4ae;
     color: #E8E8E8;
     font-size: 1.5vw;
@@ -376,7 +376,7 @@ nav a:hover::after{
 footer{
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
-    width: 99.1vw;
+    min-width: 99.1vw;
     background-color: #212121;
     color: #E8E8E8;
     display:flex;
@@ -561,7 +561,20 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-
+  @media screen and (max-width: 1500px) {
+    #icons img{
+        height: 6.7vh;
+        width: 4.3vw;
+    }
+    .empty{
+        height: 6.7vh;
+        width: 4.3vw;
+    }
+    .logo small{
+        font-size: 1vw;
+        width: 5.2vw;
+    }
+  }
   @media screen and (max-width: 1024px) {
     nav a{
         font-size: 2.1vw;   
