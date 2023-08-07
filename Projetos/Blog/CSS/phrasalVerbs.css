@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+/*body*/
+main{
+    background-color: rgba(0, 0, 0, 0.904);
+    color: white;
+    padding-top: 15vh;
+}
+/*articles*/
+section{
+    display: flex;
+}
+#artigos{
+    border-right: 2px solid white;
+    margin-top: 8vh;
+    width: 70vw;
+}
+article{
+    width: 98%;
+    border-radius: 0.4rem;
+}
+article h1{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+#a-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25vh;
+    padding: 10vh 11vw;
+}
+#a-2{
+    padding: 8vh 11vw;
+}
+/*aside*/
+aside{
+    flex: 1;
+}
+#socialMidias{
+    padding: 12vh 4vw;
+}
+#socialMidias ul{
+    list-style: none;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+aside a:hover{
+    text-decoration: underline;
+}
+aside li{
+    margin: 4vh;
+}
+#socialMidias img{
+    width: 40px;
+    height: 40px;
+}
+#topicos{
+    padding: 0 4vw;
+}
+/*tabela*/
+#table{
+    margin-top: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15vh;
+    min-width: 99.2vw;
+}
+#header-table h1{
+    color: white;
+    margin-bottom: 8vh;
+    text-align: center;
+    width: 70vw;
+}
+/*campo search*/
+#search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+#search i{
+    font-size: 1.4vw;
+    margin-right: .4vw;
+}
+#search input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #e8e8e8f4;
+    color: white;
+    padding: 0 .5vw;
+    width: 11vw;
+}
+#search input:focus{
+    outline: none;
+}
+#search input::placeholder{
+    text-align: center;
+}
+.table{
+    width: 75vw;
+    max-height: 70vh;
+    box-shadow: 0px 0px 5px 2px #e8e8e8f4;
+}
+thead{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.582);
+    text-align: center;
+}
+tbody{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.582);
+    text-align: center;
+}
+/*topo*/
+#topo{
+    position: fixed;
+    bottom: .5vh;
+    right: 1vw;
+    width: 3vw;
+    height: 6vh;
+    background-color: rgba(255, 255, 255, 0.774);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    animation: float 1.5s infinite ease-in-out;
+}
+@keyframes float{
+    0%{
+        bottom: .5vh;
+    }
+    50%{
+        bottom: 1.5vh;
+    }
+    100%{
+        bottom: .5vh;
+    }
+}
+#topo i{
+    color: rgb(165, 42, 42);
+    font-size: 1.8vw;
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 9px 3px #4d4d4df4;
+    background-color: brown;
+    bottom: 0;
+    color: #e8e8e8f4;
+    text-align: center;
+    font-weight: bold;
+    min-width: 99.2vw;
+    padding: 1vh 0;
+}
+@media screen and (max-width:768px){
+    aside a{
+        font-size: 2vw;
+    }
+    #socialMidias{
+        padding: 10vh 1vw 9vh 3vw;
+    }
+    #socialMidias h2{
+        margin-left: 1vw;
+    }
+    #socialMidias h2, #topicos h2{
+        font-size: 3vw;
+        width: 100%;
+    }
+    #socialMidias img{
+        width: 30px;
+        height: 30px;
+    }
+    #socialMidias ul, #topicos ul{
+        margin-left: -7vw;
+    }
+    #artigos{
+        width:70vw;
+        padding-top: 3.5vh;
+    }
+    #artigos p, #artigos h5{
+        text-align: justify;
+        font-weight: 400;
+    }
+    #a-1, #a-2{
+        margin-bottom: 6vh;
+        padding: 10vh 8vw;
+    }
+    #search input{
+        width: 25vw;
+    }
+    #search i{
+        font-size: 2.8vw;
+        margin-right: 1vw;
+    }
+    #topo{
+        width: 7.5vw;
+        height: 6.5vh;
+    }
+    #topo i{
+        font-size: 4vw;
+    }
+    footer{
+        font-size: 2vw;
+        height: 4vh;
+        width: 100vw;
+    }
+}
+@media screen and (max-width:450px){
+    #search i{
+        font-size: 4.5vw;
+    }
+    #search input{
+        width: 40vw;
+    }
+    #header-table h1{
+        width: 100vw;
+        padding: 0 5vw;
+    }
+   
+    aside{
+        display: none;
+    }
+    #artigos{
+        width: 100vw;
+        border: none;
+    }
+    #topo{
+        width: 10.5vw;
+        height: 5.2vh;
+        right: 1.5vw;
+    }
+    #topo i{
+        font-size: 6.5vw;
+    }
+    footer{
+        font-size: 3vw;
+        height: 4vh;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/contato.css">
+    <link rel="stylesheet" href="../CSS/navBar.css">
+    <title>EnBloglish</title>
+</head>
+<body>
+    <!--menu-->
+    <header>
+        <div id="nav"></div>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../Img/usa.png" alt="Bandeira USA" title="Bandeira USA">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
+                    <li class="nav-item"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fa-solid fa-bars" class="icon"></i></button>
+            </div>
+            <div class="logo">
+                <img src="../Img/uk.png" alt="Bandeira UK" title="Bandeira UK">
+            </div>
+        </nav>
+        <div class="menu-mobile">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
+                <li class="nav-item"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="cabecalho">
+            <h1>Contate-nos</h1>
+        </div>
+        <section>
+            <div id="container-form">
+                <form id="contato">
+                    <h4>Entre em contato conosco preenchendo o formulário abaixo</h4>
+                    <small>*Todos os campos são obrigatórios</small>
+                <!-- campo nome -->
+                <div class="input-box">
+                    <label for="nome">Nome</label>
+                    <div class="field one">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" autocomplete="none" id="nome" placeholder="Nome completo" >
+                    </div>
+                    <span class="spanNome">Digite seu nome completo</span>
+                </div>
+        <!-- campo email -->
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <div class="field two">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="xxxxxxxx@xxxxx.com" autocomplete="off" >
+                    </div>  
+                    <span class="spanEmail">Digite seu Email corretamente</span>  
+                </div>
+        <!-- campo telefone -->
+                <div class="input-box">
+                    <label for="telefone">Telefone</label>
+                    <div class="field three">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" autocomplete="none" id="telefone" placeholder="(00)0000-0000">
+                    </div>
+                    <span class="spanTelefone">Digite seu numero completo</span>
+                </div>
+        <!-- campo motivo -->
+                <div class="form-row motivo">
+                    <label for="motivo">Qual o motivo do contato?</label>
+                    <select id="motivo">
+                        <option value="">Selecione</option>
+                        <option value="sugestão">Sugestão</option>
+                        <option value="duvida">Duvida</option>
+                        <option value="profissional">Profissional</option>
+                    </select>
+                </div>
+        <!-- campo mensagem -->
+                <div class="form-row">
+                    <label for="mensagem" id="l-messages">Mensagem:</label>
+                    <br><br>
+                    <textarea id="mensagem" rows="9" cols="90" placeholder="Digite sua mensagem aqui (minimo de 40 caracteres)."></textarea>
+                    <span class="spanMensagem">Corpo da mensagem deve conter no minimo 40 caracteres</span>
+                </div>
+        <!-- botão -->
+                <div class="botao">
+                    <button id="btn-form" type="button" onclick="enviar()" onmouseover="desabilitado()">Enviar</button>
+                </div>
+                </form>
+            </div>
+            <aside>
+                <div id="socialMidias">
+                    <h2>Nossas redes sociais</h2>
+                    <ul>
+                        <li><a href=""><img src="../Img/whatsapp.png" alt="WhatsApp">Whatsapp</li></a>
+                        <li><a href=""><img src="../Img/facebook.png" alt="Facebook">Facebook</li></a>
+                        <li><a href=""><img src="../Img/instagram.png" alt="Instagram">Instagram</li></a>
+                        <li><a href=""><img src="../Img/twitter.png" alt="Twitter">Twitter</li></a>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+        <div id="popUpWindow">
+            <h2>Formulário enviado com sucesso!</h2>
+            <p>Retornaremos o contato via Email o mais breve possivel.</p>
+            <button onclick="fechar()">Fechar</button>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        &copy; Projeto pessoal
+    </footer>
+</body>
+    <script src="../JS/jquery-3.7.0.min.js"></script>
+    <script src="../JS/jquery.mask.min.js"></script>
+    <script src="../JS/contato.js"></script>
+</html>

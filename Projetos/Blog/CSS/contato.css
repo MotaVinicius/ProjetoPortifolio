@@ -1,0 +1,349 @@
+main{
+    background-color: rgba(0, 0, 0, 0.904);
+    min-height: 100vh;
+}
+section{
+    display: flex;
+}
+#cabecalho{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 2vw;;
+}
+#cabecalho h1{
+    font-size: 2vw;
+    border-bottom: 2px solid brown;
+    color: #ecececfc;
+    margin-bottom: -3.5vh;
+}
+#container-form{
+    width: 64vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#contato{
+    width: 60vw;
+    height: 85vh;
+    background-color: #31313199;
+    border-radius: .4vw;
+    padding: 4vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 5px 1px rgb(69, 69, 69);
+}
+#contato h4{
+    font-size: 1.6vw;
+}
+.field{
+    border-bottom: 2px solid white;
+    width: 14vw;
+    transition: all .4s;
+}
+label{
+    font-size: 1vw;
+    margin-bottom: .5vh;
+}
+.field i{
+    font-size: 1.2vw;
+}
+.field input{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-left: .4vw;
+    width: 12vw;
+}
+#telefone{
+    text-align: center;
+}
+.field input:focus{
+    outline: none;
+}
+.field input::placeholder{
+    text-align: center;
+}
+span{
+    color: red;
+    font-size: .7vw;
+    display: none;
+}
+.wrong{
+    border-bottom: 2px solid red;
+    transition: all .4s;
+}
+select{
+    background-color: #313131;
+    color: white;
+    margin-left: 1vh;
+}
+#mensagem{
+    resize: none;
+    border-radius: .3vw;
+    padding: .4vh .5vw;
+    overflow-y: hidden;
+    width: 40vw;
+    height: 23vh;
+    background-color: #313131;
+    color: #ffffff;
+}
+#mensagem:focus{
+    outline: none;
+}
+#mensagem::placeholder{
+    color: #d3d3d3;
+}
+#btn-form{
+    width: 7vw;
+    height: 3.5vh;
+    border-radius: .2vw;
+    border: none;
+    font-size: .9vw;
+    font-weight: 600;
+    background-color: brown;
+    color: aliceblue;
+    transition: all .3s;
+}
+#btn-form:hover{
+    background-color: rgb(255, 255, 255);
+    color: brown;
+    transition: all .3s;
+}
+/*aside*/
+aside{
+    flex: 1;
+}
+#socialMidias h2{
+    color: #ececece8;
+}
+#socialMidias{
+    padding: 12vh 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2vw;
+}
+#socialMidias ul{
+    list-style: none;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+aside a:hover{
+    text-decoration: underline;
+}
+aside li{
+    margin: 4vh;
+}
+#socialMidias img{
+    width: 45px;
+    height: 45px;
+    margin-right: .3vw;
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 9px 3px #4d4d4df4;
+    background-color: brown;
+    bottom: 0;
+    color: #e8e8e8f4;
+    text-align: center;
+    font-weight: bold;
+    min-width: 99.2vw;
+    padding: 1vh 0;
+}
+/*popUp*/
+#popUpWindow{
+    position: fixed;
+    left: 35vw;
+    top: 3vh;
+    width: 30vw;
+    height: 20vh;
+    background-color: white;
+    border-radius: .2vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1.5px #ffffff;
+    padding: .5vw 2vw;
+    font-weight: 600;
+    animation: surgir 1s ease-in-out;
+}
+@keyframes surgir{
+    0%{
+        top: -30vh;
+    }
+    100%{
+        top: 3vh;
+    }
+}
+
+#popUpWindow button{
+    font-weight: 600;
+    font-size: .9vw;
+    width: 5.5vw;
+    height: 3.5vh;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: .2vw;
+}
+#popUpWindow button:hover{
+    background-color: #313131;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    section{
+        flex-direction: column;
+    }
+    #cabecalho h1{
+        margin-left: 2vw;
+        font-size: 5vw;
+    }
+    #container-form{
+        width: 100vw;
+    }
+    #contato{
+        width: 92vw;
+        height: 92vh;
+    }
+    #contato h4{
+        font-size: 3.5vw;
+    }
+    .field{
+        width: 35vw;
+    }
+    label{
+        font-size: 2.6vw;
+        margin-bottom: .2vh;
+    }
+    .field i{
+        font-size: 2.8vw;
+    }
+    .field input{
+        padding-left: .4vw;
+        width: 30vw;
+    }
+    #btn-form{
+        width: 15vw;
+        height: 4vh;
+        font-size: 2.2vw;
+        border-radius: 2vw;
+    }
+    #mensagem{
+        width: 80vw;
+    }
+    span{
+        font-size: 1.8vw;
+        width: 35vw;
+        text-align: center;
+    }
+    #l-messages{
+        margin-top: 2vw;
+        margin-bottom: -2vw;
+    }
+    .motivo{
+        margin-top: 2.5vw;
+    }
+    aside a{
+        font-size: 2.2vw;
+    }
+    #socialMidias ul{
+        margin-left: -2vw;
+    }
+    #socialMidias h2{
+        margin-left: 3vw;
+    }
+    #cabecalho{
+        height: 20vh;
+    }
+    #cabecalho h1{
+        margin-bottom: -8vh;
+    }
+    #popUpWindow{
+        top: 3vh;
+        width: 62vw;
+        left: 19vw;
+        padding: 2vh 3vw;
+    }
+    #popUpWindow button{
+        width: 12vw;
+        border-radius: .6vw;
+        font-size: 2.2vw;
+    }
+    .spanMensagem{
+        width: 79.5vw;
+        text-align: end;
+    }
+}
+@media screen and (max-width: 450px) {
+    #cabecalho{
+        height: 13vh;
+    }
+    #cabecalho h1{
+        font-size: 8.5vw;
+    }
+    #contato h4{
+        font-size: 4.5vw;
+    }
+    label{
+        font-size: 4vw;
+        margin-bottom: 0;
+    }
+    .field input{
+        padding-left: .5vw;
+        width: 52vw;
+    }
+    .field{
+        width: 60vw;
+    }
+    .field i{
+        font-size: 4.5vw;
+    }
+    #btn-form{
+        width: 23vw;
+        height: 4vh;
+        font-size: 4vw;
+        border-radius: 2vw;
+    }
+    span{
+        font-size: 3vw;
+        width: 60vw;
+        text-align: center;
+    }
+    .spanMensagem{
+        width: 79.5vw;
+        text-align: center;
+    }
+    aside a{
+        font-size: 3.7vw;
+    }
+    #socialMidias ul{
+        margin-left: -6vw;
+    }
+    footer{
+        font-size: 3.3vw;
+        height: 4vh;
+    }
+    #popUpWindow{
+        width: 69vw;
+        left: 15.5vw;
+        padding: 2vh 3vw;
+        text-align: center;
+    }
+    #popUpWindow button{
+        width: 25vw;
+        font-size: 3.8vw;
+        padding-bottom: .35vh;
+    }
+}

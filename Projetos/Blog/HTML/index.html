@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/navBar.css">
+    <title>EnBloglish</title>
+</head>
+<body>
+    <!--menu-->
+    <header>
+        <div id="nav"></div>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../Img/usa.png" alt="Bandeira USA" title="Bandeira USA">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
+                    <li class="nav-item"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fa-solid fa-bars" class="icon"></i></button>
+            </div>
+            <div class="logo">
+                <img src="../Img/uk.png" alt="Bandeira UK" title="Bandeira UK">
+            </div>
+            
+        </nav>
+        <div class="menu-mobile">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="grammarRules.html" class="nav-link">Grammar rules</a></li>
+                <li class="nav-item"><a href="phrasalVerbs.html" class="nav-link">Phrasal Verbs</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!--Titulo-->
+        <section>
+            <article id="title">
+                <h1><span id="span1">E</span>n<span id="span2">B</span>loglish</h1>
+                <h2>Seu blog favorito sobre a lingua inglêsa</h2>
+            </article>
+            <!--Carrossel-->
+            <article>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../Img/Phrasal.jpg" class="d-block w-100" alt="Phrasal verbs">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Aprenda mais sobre phrasal Verbs</h5>
+                          <p>Descubra o que são phrasal verbs e conheça alguns dos mais utilizados na lingua inglêsa</p>
+                          <a href="phrasalVerbs.html">Veja mais</a>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../Img/note.jpg" class="d-block w-100" alt="Regras gramaticais">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Regras Gramaticais</h5>
+                          <p>Conheça as principais regras gramaticais e como são aplicadas</p>
+                          <a href="grammarRules.html">Veja mais</a>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </article>
+            <!--Newsletter-->
+            <div id="newsletter">
+                <div id="box-newsletter">
+                    <div id="content">
+                        <h3>Se inscreva na nossa newsletter</h3>
+                        <div class="input">
+                            <p>Quer ficar por dentro das nossas dicas? Cadastre seu email</p>
+                            <input type="email" class="email" placeholder="Insira seu e-mail aqui">
+                            <button onclick="enviar()">Inscrever-se</button>
+                        </div>
+                        <span id="span">Digite seu email corretamente</span>
+                    </div>
+                    <div id="imagem">
+                        <div id="fundo">
+                            <img src="../Img/letter_opened_icon-icons.com_67751.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--pop-up-->
+            <div class="pop-up">
+                <div class="pop-up-window">
+                    <div class="close-pop-up">
+                        <i class="fa-solid fa-xmark" title="Fechar"></i>
+                    </div>
+                    <div class="content-pop-up">
+                        <h3>Você acaba de se inscrever na nossa Newsletter!</h3>
+                        <p>a partir de agora você recebera nossas dicas semanais para evoluir seu aprendizado direto no seu e-mail</p>
+                        <i class="fa-solid fa-check" title="Ok"></i>
+                    </div>
+                </div>
+            </div>
+            <!--História-->
+            <div id="bottom">
+                <article id="history">
+                    <h2>História da lingua inglêsa</h2>
+                    <p>A história da língua inglesa começa com o inglês antigo, que era falado pelos povos germânicos que habitavam a Inglaterra entre os séculos V e XI. Essa forma primitiva de inglês apresentava uma estrutura gramatical e vocabulário distintos. Embora muitas palavras do inglês antigo sejam reconhecíveis hoje, a pronúncia e a ortografia eram bastante diferentes.</p>
+                    <p>Durante a Idade Média, o inglês médio emergiu como resultado da influência do francês normando após a conquista normanda em 1066. Palavras de origem francesa e latina foram incorporadas ao inglês, especialmente nas áreas de governo, justiça, religião e artes. O inglês médio viu um desenvolvimento significativo da língua escrita, graças à difusão da imprensa por Johannes Gutenberg no século XV. Isso levou a uma maior padronização da ortografia e permitiu uma disseminação mais ampla da língua escrita.</p>
+                    <p>Com o início da era moderna, o inglês passou por transformações adicionais. Durante os séculos XVII e XVIII, a Revolução Industrial e os avanços científicos trouxeram um vocabulário expandido para o inglês, com termos relacionados à ciência, tecnologia e indústria. O inglês também foi influenciado pelas explorações marítimas e colonização britânica, expandindo sua influência global.</p>
+                    <p>O inglês moderno, como o conhecemos hoje, é a forma predominante da língua inglesa. O período moderno testemunhou um aumento sem precedentes na disseminação e influência do inglês. O Império Britânico desempenhou um papel importante na expansão da língua para várias partes do mundo. Além disso, o crescimento dos Estados Unidos como potência global trouxe ainda mais alcance para o inglês.</p>
+                    <p>Ao longo do tempo, o inglês absorveu palavras de muitos outros idiomas, tornando-se uma língua rica e diversificada. Hoje, o inglês é uma língua franca global, amplamente utilizada em diversas áreas, como literatura, ciência, tecnologia, negócios e entretenimento.</p>
+                    <p>Em suma, a história da língua inglesa é uma jornada fascinante de mudanças, influências e expansão global. Através dos séculos, essa língua versátil evoluiu e se tornou uma das línguas mais proeminentes do mundo, conectando pessoas de diferentes culturas e proporcionando um meio de comunicação globalmente compreendido.</p>
+                </article>
+                <aside>
+                    <div id="socialMidias">
+                        <h2>Nossas redes sociais</h2>
+                        <ul>
+                            <li><a href=""><img src="../Img/whatsapp.png" alt="WhatsApp">Whatsapp</li></a>
+                            <li><a href=""><img src="../Img/facebook.png" alt="Facebook">Facebook</li></a>
+                            <li><a href=""><img src="../Img/instagram.png" alt="Instagram">Instagram</li></a>
+                            <li><a href=""><img src="../Img/twitter.png" alt="Twitter">Twitter</li></a>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <!--Topo-->
+    <a href="#nav" title="Retornar ao topo">
+        <div id="topo">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
+    <!--Footer-->
+    <footer>
+            &copy; Projeto pessoal
+    </footer>
+        <script src="../JS/script.js"></script>
+</body>
+</html>

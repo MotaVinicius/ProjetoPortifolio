@@ -78,8 +78,9 @@ section{
 }
 #title h1{
     font-family: 'Ubuntu', sans-serif;
-    width: 6.5vw;
+    width: 20vw;
     text-align: center;
+    margin-bottom: 1vh;
 }
 #inputs{
     display: flex;
@@ -93,6 +94,11 @@ label{
 }
 .input{
     border-bottom: 2px solid var(--cor-secundaria);
+    transition: all .4s;
+}
+.wrong{
+    border-bottom: 2px solid red;
+    transition: all .4s;
 }
 .input i{
     font-size: 1vw;
@@ -110,6 +116,7 @@ label{
     outline: none;
 }
 .botao button{
+    margin-top: 1.5vh;
     padding: .8vh 5.3vw;
     background-color: #00a1ecb7;
     color: aliceblue;
@@ -142,7 +149,7 @@ label{
 .span, .span2, .span3{
     color: transparent;
     font-size: .6vw;
-    width: 20vw;
+    width: 16vw;
 }
 
 .alerta, .ok{
@@ -239,7 +246,7 @@ label{
         margin-bottom: 0;
     }
     #title h1{
-        width: 9vw;
+        width: 19vw;
     }
     #inputs{
         width: 28vw;
@@ -291,7 +298,7 @@ label{
         margin-bottom: 0;
     }
     #title h1{
-        width: 14vw;
+        width: 54vw;
     }
     #inputs{
         width: 45vw;
@@ -308,7 +315,7 @@ label{
     }
     .user, .senha{
         width: 37vw;
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
     .botao button{
         padding: .7vh 15.4vw;
@@ -317,8 +324,8 @@ label{
     }
     .span, .span2, .span3{
         color: transparent;
-        font-size: 1.5vw;
-        width: 30vw;
+        font-size: 2.5vw;
+        width: 50vw;
     }
     .logo{
         font-size: 7.5vw;
